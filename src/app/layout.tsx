@@ -1,9 +1,9 @@
-import { Roboto } from "next/font/google"
+import { Montserrat } from "next/font/google"
 import { Header } from "app/components/shared/Header"
 import { Footer } from "app/components/shared/Footer"
 import "app/sass/globals.sass"
 
-const roboto = Roboto({
+const montserrat = Montserrat({
   weight: ["100", "300", "500", "700"],
   subsets: ["latin"],
 })
@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
+      <body className={montserrat.className}>
         <Header />
         {children}
         <Footer />
