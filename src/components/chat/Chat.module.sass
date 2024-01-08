@@ -5,7 +5,7 @@
   margin: 0 auto
   padding: 2rem
   &__title
-    background-image: linear-gradient(270deg, #4f56ff, #ff4980)
+    background-image: $gradient
     background-clip: text
     -webkit-text-fill-color: transparent
     font-size: 3rem
@@ -13,7 +13,7 @@
     letter-spacing: 0.05em
     text-align: center
   &__button
-    background: $main-contrast
+    background: $gradient
     font-weight: bold
     font-size: 1rem
     padding: 0.5rem 1rem
@@ -44,7 +44,7 @@
     row-gap: 1.5rem
   &__message
     padding: 1rem
-    background: $border-color
+    background: $main-contrast
     border-radius: 0.5rem
     display: flex
     flex-direction: row wrap
