@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import { getMainProducts } from "app/services/shopify/products"
 import styles from "./MainProducts.module.sass"
 
@@ -11,7 +12,10 @@ export const MainProducts = async () => {
       <div className={styles.MainProducts__grid}>
         {products?.map((product) => {
           return (
-            <article key={product.id}>
+            <Link
+              href={`/product/${product.handle}?id=${product.id}`}
+              key={product.id}
+            >
               <p>{product.title}</p>
               <Image
                 src={product.image}
@@ -19,7 +23,7 @@ export const MainProducts = async () => {
                 alt={product.title}
                 loading="eager"
               />
-            </article>
+            </Link>
           )
         })}
       </div>
