@@ -25,7 +25,16 @@
         outline: none
         border-bottom: 1px solid $main-contrast
     & > input[name="submit"]
-      border: 1px solid $main-contrast
+      border: none
+      background: $gradient
+      color: $text-color
+      padding: 1rem
+      font-weight: 700
+      text-transform: uppercase
+      cursor: pointer
+      border-radius: 1.5rem
+    & > a
+      border: 2px solid $main-contrast
       background: transparent
       color: $text-color
       padding: 1rem
@@ -33,3 +42,6 @@
       text-transform: uppercase
       cursor: pointer
       border-radius: 1.5rem
+      text-align: center
+      text-decoration: none
+      font-size: 0.80rem

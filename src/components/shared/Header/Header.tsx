@@ -33,7 +33,7 @@ export const Header = async () => {
             paths={["/my-account"]}
           />
         ) : (
-          <NavItem href="/login" label="Login" paths={["/login"]} />
+          <NavItem href="/login" label="Login" paths={["/login", "/signup"]} />
         )}
         <NoSSRShoppingCart />
       </nav>
