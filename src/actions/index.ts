@@ -7,6 +7,7 @@ import { createUserMutation } from "app/graphql/mutations/createUserMutation"
 import { createAccessToken } from "app/utils/auth/createAccessToken"
 import { validateAccessToken } from "app/utils/auth/validateAccessToken"
 import { createCartMutation } from "app/graphql/mutations/createCartMutation"
+import { deleteAccessToken } from "app/utils/auth/deleteAccessToken"
 
 export const handleCreateUser = async (formData: FormData) => {
   const formDataObject = Object.fromEntries(formData)
@@ -72,4 +73,9 @@ export const handleCreateCart = async (items: CartItem[]) => {
   } = await graphqlClient.request(createCartMutation, variables)
 
   return cartCreate?.cart?.checkoutUrl
+}
+
+export const handleLogout = async () => {
+  await deleteAccessToken()
+  redirect("/")
 }

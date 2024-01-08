@@ -1,9 +1,10 @@
 "use client"
-import { handleLogin } from "app/actions"
-import styles from "./LoginForm.module.sass"
-import Link from "next/link"
 
-export const LoginForm = () => {
+import { handleLogin } from "app/actions"
+import Link from "next/link"
+import styles from "./LoginForm.module.sass"
+
+export const LoginForm = async () => {
   const handleSubmit = async (event: any) => {
     event.preventDefault()
     const formData = new FormData(event.target)
