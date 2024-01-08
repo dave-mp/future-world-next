@@ -1,0 +1,54 @@
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>products.ts</title>
+      <link href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" type="text/css" rel="stylesheet">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.2/codemirror.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.2/mode/javascript/javascript.min.js" type="text/javascript" charset="utf-8"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.2/codemirror.min.css" type="text/css" rel="stylesheet">
+<script src="../../../../assets/source-file.js" type="text/javascript" charset="utf-8"></script>
+<link href="../../../../assets/source-file.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+    <div style="margin-top:3em" class="ui container"><h1 class="ui header"><a href="../../../../index.html">TypeScript coverage report</a></h1><table style="margin-top:2em" class="ui celled table"><thead class=""><tr class=""><th class="">Filename</th><th class="">Percent</th><th class="">Threshold</th><th class="">Total</th><th class="">Covered</th><th class="">Uncovered</th></tr></thead><tbody class=""><tr class="negative"><td class="">src/services/shopify/products.ts</td><td class="">44.07%</td><td class="">80%</td><td class="">59</td><td class="">26</td><td class="">33</td></tr></tbody></table><textarea id="editor" readonly="" style="margin-top:3em">import { shopifyUrls } from &quot;./urls&quot;
+import { HEADERS } from &quot;./consts&quot;
+
+export const getAllProducts = async (
+  productId?: string
+): Promise&lt;ProductType[]&gt; =&gt; {
+  try {
+    const apiUrl =
+      shopifyUrls.products.all + (productId ? `?ids=${productId}` : &quot;&quot;)
+    const response = await fetch(apiUrl, {
+      headers: HEADERS,
+    })
+    const { products } = await response.json()
+
+    const transformedProducts: ProductType[] = products.map((product: any) =&gt; {
+      const { admin_graphql_api_id, price, inventory_quantity } =
+        product.variants[0]
+
+      return {
+        id: product.id,
+        gql_id: admin_graphql_api_id,
+        title: product.title,
+        description: product.body_html,
+        price,
+        image: product.images[0].src,
+        quantity: inventory_quantity,
+        handle: product.handle,
+        tags: product.tags,
+      }
+    })
+    return transformedProducts
+  } catch (error) {
+    console.error(error)
+  }
+  return []
+}
+</textarea><pre id="annotations" style="display:none">[{&quot;file&quot;:&quot;src/services/shopify/products.ts&quot;,&quot;line&quot;:12,&quot;character&quot;:12,&quot;text&quot;:&quot;products&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/services/shopify/products.ts&quot;,&quot;line&quot;:14,&quot;character&quot;:47,&quot;text&quot;:&quot;products&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/services/shopify/products.ts&quot;,&quot;line&quot;:14,&quot;character&quot;:56,&quot;text&quot;:&quot;map&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/services/shopify/products.ts&quot;,&quot;line&quot;:14,&quot;character&quot;:61,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/services/shopify/products.ts&quot;,&quot;line&quot;:15,&quot;character&quot;:14,&quot;text&quot;:&quot;admin_graphql_api_id&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/services/shopify/products.ts&quot;,&quot;line&quot;:15,&quot;character&quot;:36,&quot;text&quot;:&quot;price&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/services/shopify/products.ts&quot;,&quot;line&quot;:15,&quot;character&quot;:43,&quot;text&quot;:&quot;inventory_quantity&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/services/shopify/products.ts&quot;,&quot;line&quot;:16,&quot;character&quot;:8,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/services/shopify/products.ts&quot;,&quot;line&quot;:16,&quot;character&quot;:16,&quot;text&quot;:&quot;variants&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/services/shopify/products.ts&quot;,&quot;line&quot;:19,&quot;character&quot;:8,&quot;text&quot;:&quot;id&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/services/shopify/products.ts&quot;,&quot;line&quot;:19,&quot;character&quot;:12,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/services/shopify/products.ts&quot;,&quot;line&quot;:19,&quot;character&quot;:20,&quot;text&quot;:&quot;id&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/services/shopify/products.ts&quot;,&quot;line&quot;:20,&quot;character&quot;:8,&quot;text&quot;:&quot;gql_id&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/services/shopify/products.ts&quot;,&quot;line&quot;:20,&quot;character&quot;:16,&quot;text&quot;:&quot;admin_graphql_api_id&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/services/shopify/products.ts&quot;,&quot;line&quot;:21,&quot;character&quot;:8,&quot;text&quot;:&quot;title&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/services/shopify/products.ts&quot;,&quot;line&quot;:21,&quot;character&quot;:15,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/services/shopify/products.ts&quot;,&quot;line&quot;:21,&quot;character&quot;:23,&quot;text&quot;:&quot;title&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/services/shopify/products.ts&quot;,&quot;line&quot;:22,&quot;character&quot;:8,&quot;text&quot;:&quot;description&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/services/shopify/products.ts&quot;,&quot;line&quot;:22,&quot;character&quot;:21,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/services/shopify/products.ts&quot;,&quot;line&quot;:22,&quot;character&quot;:29,&quot;text&quot;:&quot;body_html&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/services/shopify/products.ts&quot;,&quot;line&quot;:23,&quot;character&quot;:8,&quot;text&quot;:&quot;price&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/services/shopify/products.ts&quot;,&quot;line&quot;:24,&quot;character&quot;:8,&quot;text&quot;:&quot;image&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/services/shopify/products.ts&quot;,&quot;line&quot;:24,&quot;character&quot;:15,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/services/shopify/products.ts&quot;,&quot;line&quot;:24,&quot;character&quot;:23,&quot;text&quot;:&quot;images&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/services/shopify/products.ts&quot;,&quot;line&quot;:24,&quot;character&quot;:33,&quot;text&quot;:&quot;src&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/services/shopify/products.ts&quot;,&quot;line&quot;:25,&quot;character&quot;:8,&quot;text&quot;:&quot;quantity&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/services/shopify/products.ts&quot;,&quot;line&quot;:25,&quot;character&quot;:18,&quot;text&quot;:&quot;inventory_quantity&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/services/shopify/products.ts&quot;,&quot;line&quot;:26,&quot;character&quot;:8,&quot;text&quot;:&quot;handle&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/services/shopify/products.ts&quot;,&quot;line&quot;:26,&quot;character&quot;:16,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/services/shopify/products.ts&quot;,&quot;line&quot;:26,&quot;character&quot;:24,&quot;text&quot;:&quot;handle&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/services/shopify/products.ts&quot;,&quot;line&quot;:27,&quot;character&quot;:8,&quot;text&quot;:&quot;tags&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/services/shopify/products.ts&quot;,&quot;line&quot;:27,&quot;character&quot;:14,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/services/shopify/products.ts&quot;,&quot;line&quot;:27,&quot;character&quot;:22,&quot;text&quot;:&quot;tags&quot;,&quot;kind&quot;:1}]</pre></div>
+    <p class="footer-text">TypeScript Coverage Report generated by <a href="https://github.com/plantain-00/type-coverage">type-coverage</a> and <a href="https://github.com/alexcanessa/typescript-coverage-report">typescript-coverage-report</a> at Thu, 04 Jan 2024 16:56:56 GMT</p>
+    </body>
+  </html>
+  

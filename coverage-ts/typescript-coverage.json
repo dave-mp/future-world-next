@@ -1,0 +1,506 @@
+{
+  "fileCounts": {},
+  "anys": [
+    {
+      "file": "src/services/shopify/products.ts",
+      "line": 12,
+      "character": 12,
+      "text": "products",
+      "kind": 1
+    },
+    {
+      "file": "src/services/shopify/products.ts",
+      "line": 14,
+      "character": 47,
+      "text": "products",
+      "kind": 1
+    },
+    {
+      "file": "src/services/shopify/products.ts",
+      "line": 14,
+      "character": 56,
+      "text": "map",
+      "kind": 1
+    },
+    {
+      "file": "src/services/shopify/products.ts",
+      "line": 14,
+      "character": 61,
+      "text": "product",
+      "kind": 1
+    },
+    {
+      "file": "src/services/shopify/products.ts",
+      "line": 15,
+      "character": 14,
+      "text": "admin_graphql_api_id",
+      "kind": 1
+    },
+    {
+      "file": "src/services/shopify/products.ts",
+      "line": 15,
+      "character": 36,
+      "text": "price",
+      "kind": 1
+    },
+    {
+      "file": "src/services/shopify/products.ts",
+      "line": 15,
+      "character": 43,
+      "text": "inventory_quantity",
+      "kind": 1
+    },
+    {
+      "file": "src/services/shopify/products.ts",
+      "line": 16,
+      "character": 8,
+      "text": "product",
+      "kind": 1
+    },
+    {
+      "file": "src/services/shopify/products.ts",
+      "line": 16,
+      "character": 16,
+      "text": "variants",
+      "kind": 1
+    },
+    {
+      "file": "src/services/shopify/products.ts",
+      "line": 19,
+      "character": 8,
+      "text": "id",
+      "kind": 1
+    },
+    {
+      "file": "src/services/shopify/products.ts",
+      "line": 19,
+      "character": 12,
+      "text": "product",
+      "kind": 1
+    },
+    {
+      "file": "src/services/shopify/products.ts",
+      "line": 19,
+      "character": 20,
+      "text": "id",
+      "kind": 1
+    },
+    {
+      "file": "src/services/shopify/products.ts",
+      "line": 20,
+      "character": 8,
+      "text": "gql_id",
+      "kind": 1
+    },
+    {
+      "file": "src/services/shopify/products.ts",
+      "line": 20,
+      "character": 16,
+      "text": "admin_graphql_api_id",
+      "kind": 1
+    },
+    {
+      "file": "src/services/shopify/products.ts",
+      "line": 21,
+      "character": 8,
+      "text": "title",
+      "kind": 1
+    },
+    {
+      "file": "src/services/shopify/products.ts",
+      "line": 21,
+      "character": 15,
+      "text": "product",
+      "kind": 1
+    },
+    {
+      "file": "src/services/shopify/products.ts",
+      "line": 21,
+      "character": 23,
+      "text": "title",
+      "kind": 1
+    },
+    {
+      "file": "src/services/shopify/products.ts",
+      "line": 22,
+      "character": 8,
+      "text": "description",
+      "kind": 1
+    },
+    {
+      "file": "src/services/shopify/products.ts",
+      "line": 22,
+      "character": 21,
+      "text": "product",
+      "kind": 1
+    },
+    {
+      "file": "src/services/shopify/products.ts",
+      "line": 22,
+      "character": 29,
+      "text": "body_html",
+      "kind": 1
+    },
+    {
+      "file": "src/services/shopify/products.ts",
+      "line": 23,
+      "character": 8,
+      "text": "price",
+      "kind": 1
+    },
+    {
+      "file": "src/services/shopify/products.ts",
+      "line": 24,
+      "character": 8,
+      "text": "image",
+      "kind": 1
+    },
+    {
+      "file": "src/services/shopify/products.ts",
+      "line": 24,
+      "character": 15,
+      "text": "product",
+      "kind": 1
+    },
+    {
+      "file": "src/services/shopify/products.ts",
+      "line": 24,
+      "character": 23,
+      "text": "images",
+      "kind": 1
+    },
+    {
+      "file": "src/services/shopify/products.ts",
+      "line": 24,
+      "character": 33,
+      "text": "src",
+      "kind": 1
+    },
+    {
+      "file": "src/services/shopify/products.ts",
+      "line": 25,
+      "character": 8,
+      "text": "quantity",
+      "kind": 1
+    },
+    {
+      "file": "src/services/shopify/products.ts",
+      "line": 25,
+      "character": 18,
+      "text": "inventory_quantity",
+      "kind": 1
+    },
+    {
+      "file": "src/services/shopify/products.ts",
+      "line": 26,
+      "character": 8,
+      "text": "handle",
+      "kind": 1
+    },
+    {
+      "file": "src/services/shopify/products.ts",
+      "line": 26,
+      "character": 16,
+      "text": "product",
+      "kind": 1
+    },
+    {
+      "file": "src/services/shopify/products.ts",
+      "line": 26,
+      "character": 24,
+      "text": "handle",
+      "kind": 1
+    },
+    {
+      "file": "src/services/shopify/products.ts",
+      "line": 27,
+      "character": 8,
+      "text": "tags",
+      "kind": 1
+    },
+    {
+      "file": "src/services/shopify/products.ts",
+      "line": 27,
+      "character": 14,
+      "text": "product",
+      "kind": 1
+    },
+    {
+      "file": "src/services/shopify/products.ts",
+      "line": 27,
+      "character": 22,
+      "text": "tags",
+      "kind": 1
+    },
+    {
+      "file": "src/services/shopify/collections.ts",
+      "line": 8,
+      "character": 12,
+      "text": "smart_collections",
+      "kind": 1
+    },
+    {
+      "file": "src/services/shopify/collections.ts",
+      "line": 23,
+      "character": 12,
+      "text": "products",
+      "kind": 1
+    },
+    {
+      "file": ".next/types/app/layout.ts",
+      "line": 19,
+      "character": 2,
+      "text": "metadata",
+      "kind": 1
+    },
+    {
+      "file": ".next/types/app/layout.ts",
+      "line": 21,
+      "character": 2,
+      "text": "viewport",
+      "kind": 1
+    },
+    {
+      "file": ".next/types/app/layout.ts",
+      "line": 43,
+      "character": 21,
+      "text": "params",
+      "kind": 1
+    },
+    {
+      "file": ".next/types/app/layout.ts",
+      "line": 43,
+      "character": 29,
+      "text": "PageParams",
+      "kind": 1
+    },
+    {
+      "file": ".next/types/app/layout.ts",
+      "line": 47,
+      "character": 5,
+      "text": "PageParams",
+      "kind": 1
+    },
+    {
+      "file": ".next/types/app/layout.ts",
+      "line": 49,
+      "character": 2,
+      "text": "params",
+      "kind": 1
+    },
+    {
+      "file": ".next/types/app/layout.ts",
+      "line": 50,
+      "character": 2,
+      "text": "searchParams",
+      "kind": 1
+    },
+    {
+      "file": ".next/types/app/layout.ts",
+      "line": 55,
+      "character": 2,
+      "text": "params",
+      "kind": 1
+    },
+    {
+      "file": ".next/types/app/layout.ts",
+      "line": 60,
+      "character": 38,
+      "text": "revalidate",
+      "kind": 1
+    },
+    {
+      "file": ".next/types/app/store/layout.ts",
+      "line": 19,
+      "character": 2,
+      "text": "metadata",
+      "kind": 1
+    },
+    {
+      "file": ".next/types/app/store/layout.ts",
+      "line": 21,
+      "character": 2,
+      "text": "viewport",
+      "kind": 1
+    },
+    {
+      "file": ".next/types/app/store/layout.ts",
+      "line": 43,
+      "character": 21,
+      "text": "params",
+      "kind": 1
+    },
+    {
+      "file": ".next/types/app/store/layout.ts",
+      "line": 43,
+      "character": 29,
+      "text": "PageParams",
+      "kind": 1
+    },
+    {
+      "file": ".next/types/app/store/layout.ts",
+      "line": 47,
+      "character": 5,
+      "text": "PageParams",
+      "kind": 1
+    },
+    {
+      "file": ".next/types/app/store/layout.ts",
+      "line": 49,
+      "character": 2,
+      "text": "params",
+      "kind": 1
+    },
+    {
+      "file": ".next/types/app/store/layout.ts",
+      "line": 50,
+      "character": 2,
+      "text": "searchParams",
+      "kind": 1
+    },
+    {
+      "file": ".next/types/app/store/layout.ts",
+      "line": 55,
+      "character": 2,
+      "text": "params",
+      "kind": 1
+    },
+    {
+      "file": ".next/types/app/store/layout.ts",
+      "line": 60,
+      "character": 38,
+      "text": "revalidate",
+      "kind": 1
+    },
+    {
+      "file": ".next/types/app/store/[[...categories]]/page.ts",
+      "line": 19,
+      "character": 2,
+      "text": "metadata",
+      "kind": 1
+    },
+    {
+      "file": ".next/types/app/store/[[...categories]]/page.ts",
+      "line": 21,
+      "character": 2,
+      "text": "viewport",
+      "kind": 1
+    },
+    {
+      "file": ".next/types/app/store/[[...categories]]/page.ts",
+      "line": 43,
+      "character": 21,
+      "text": "params",
+      "kind": 1
+    },
+    {
+      "file": ".next/types/app/store/[[...categories]]/page.ts",
+      "line": 43,
+      "character": 29,
+      "text": "PageParams",
+      "kind": 1
+    },
+    {
+      "file": ".next/types/app/store/[[...categories]]/page.ts",
+      "line": 47,
+      "character": 5,
+      "text": "PageParams",
+      "kind": 1
+    },
+    {
+      "file": ".next/types/app/store/[[...categories]]/page.ts",
+      "line": 49,
+      "character": 2,
+      "text": "params",
+      "kind": 1
+    },
+    {
+      "file": ".next/types/app/store/[[...categories]]/page.ts",
+      "line": 50,
+      "character": 2,
+      "text": "searchParams",
+      "kind": 1
+    },
+    {
+      "file": ".next/types/app/store/[[...categories]]/page.ts",
+      "line": 55,
+      "character": 2,
+      "text": "params",
+      "kind": 1
+    },
+    {
+      "file": ".next/types/app/store/[[...categories]]/page.ts",
+      "line": 60,
+      "character": 38,
+      "text": "revalidate",
+      "kind": 1
+    },
+    {
+      "file": ".next/types/app/product/[handle]/page.ts",
+      "line": 19,
+      "character": 2,
+      "text": "metadata",
+      "kind": 1
+    },
+    {
+      "file": ".next/types/app/product/[handle]/page.ts",
+      "line": 21,
+      "character": 2,
+      "text": "viewport",
+      "kind": 1
+    },
+    {
+      "file": ".next/types/app/product/[handle]/page.ts",
+      "line": 43,
+      "character": 21,
+      "text": "params",
+      "kind": 1
+    },
+    {
+      "file": ".next/types/app/product/[handle]/page.ts",
+      "line": 43,
+      "character": 29,
+      "text": "PageParams",
+      "kind": 1
+    },
+    {
+      "file": ".next/types/app/product/[handle]/page.ts",
+      "line": 47,
+      "character": 5,
+      "text": "PageParams",
+      "kind": 1
+    },
+    {
+      "file": ".next/types/app/product/[handle]/page.ts",
+      "line": 49,
+      "character": 2,
+      "text": "params",
+      "kind": 1
+    },
+    {
+      "file": ".next/types/app/product/[handle]/page.ts",
+      "line": 50,
+      "character": 2,
+      "text": "searchParams",
+      "kind": 1
+    },
+    {
+      "file": ".next/types/app/product/[handle]/page.ts",
+      "line": 55,
+      "character": 2,
+      "text": "params",
+      "kind": 1
+    },
+    {
+      "file": ".next/types/app/product/[handle]/page.ts",
+      "line": 60,
+      "character": 38,
+      "text": "revalidate",
+      "kind": 1
+    }
+  ],
+  "percentage": 94.88472622478386,
+  "total": 1388,
+  "covered": 1317,
+  "uncovered": 71
+}

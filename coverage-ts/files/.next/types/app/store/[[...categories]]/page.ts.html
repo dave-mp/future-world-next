@@ -1,0 +1,97 @@
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>page.ts</title>
+      <link href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" type="text/css" rel="stylesheet">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.2/codemirror.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.2/mode/javascript/javascript.min.js" type="text/javascript" charset="utf-8"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.2/codemirror.min.css" type="text/css" rel="stylesheet">
+<script src="../../../../../../assets/source-file.js" type="text/javascript" charset="utf-8"></script>
+<link href="../../../../../../assets/source-file.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+    <div style="margin-top:3em" class="ui container"><h1 class="ui header"><a href="../../../../../../index.html">TypeScript coverage report</a></h1><table style="margin-top:2em" class="ui celled table"><thead class=""><tr class=""><th class="">Filename</th><th class="">Percent</th><th class="">Threshold</th><th class="">Total</th><th class="">Covered</th><th class="">Uncovered</th></tr></thead><tbody class=""><tr class="positive"><td class="">.next/types/app/store/[[...categories]]/page.ts</td><td class="">94.19%</td><td class="">80%</td><td class="">155</td><td class="">146</td><td class="">9</td></tr></tbody></table><textarea id="editor" readonly="" style="margin-top:3em">// File: /Users/davemp/dev/platzi-curso-nextjs/nextjs-store/src/app/store/[[...categories]]/page.tsx
+import * as entry from &#x27;../../../../../src/app/store/[[...categories]]/page.js&#x27;
+import type { ResolvingMetadata, ResolvingViewport } from &#x27;next/dist/lib/metadata/types/metadata-interface.js&#x27;
+
+type TEntry = typeof import(&#x27;../../../../../src/app/store/[[...categories]]/page.js&#x27;)
+
+// Check that the entry is a valid entry
+checkFields&lt;Diff&lt;{
+  default: Function
+  config?: {}
+  generateStaticParams?: Function
+  revalidate?: RevalidateRange&lt;TEntry&gt; | false
+  dynamic?: &#x27;auto&#x27; | &#x27;force-dynamic&#x27; | &#x27;error&#x27; | &#x27;force-static&#x27;
+  dynamicParams?: boolean
+  fetchCache?: &#x27;auto&#x27; | &#x27;force-no-store&#x27; | &#x27;only-no-store&#x27; | &#x27;default-no-store&#x27; | &#x27;default-cache&#x27; | &#x27;only-cache&#x27; | &#x27;force-cache&#x27;
+  preferredRegion?: &#x27;auto&#x27; | &#x27;global&#x27; | &#x27;home&#x27; | string | string[]
+  runtime?: &#x27;nodejs&#x27; | &#x27;experimental-edge&#x27; | &#x27;edge&#x27;
+  maxDuration?: number
+  
+  metadata?: any
+  generateMetadata?: Function
+  viewport?: any
+  generateViewport?: Function
+  
+}, TEntry, &#x27;&#x27;&gt;&gt;()
+
+// Check the prop type of the entry function
+checkFields&lt;Diff&lt;PageProps, FirstArg&lt;TEntry[&#x27;default&#x27;]&gt;, &#x27;default&#x27;&gt;&gt;()
+
+// Check the arguments and return type of the generateMetadata function
+if (&#x27;generateMetadata&#x27; in entry) {
+  checkFields&lt;Diff&lt;PageProps, FirstArg&lt;MaybeField&lt;TEntry, &#x27;generateMetadata&#x27;&gt;&gt;, &#x27;generateMetadata&#x27;&gt;&gt;()
+  checkFields&lt;Diff&lt;ResolvingMetadata, SecondArg&lt;MaybeField&lt;TEntry, &#x27;generateMetadata&#x27;&gt;&gt;, &#x27;generateMetadata&#x27;&gt;&gt;()
+}
+
+// Check the arguments and return type of the generateViewport function
+if (&#x27;generateViewport&#x27; in entry) {
+  checkFields&lt;Diff&lt;PageProps, FirstArg&lt;MaybeField&lt;TEntry, &#x27;generateViewport&#x27;&gt;&gt;, &#x27;generateViewport&#x27;&gt;&gt;()
+  checkFields&lt;Diff&lt;ResolvingViewport, SecondArg&lt;MaybeField&lt;TEntry, &#x27;generateViewport&#x27;&gt;&gt;, &#x27;generateViewport&#x27;&gt;&gt;()
+}
+
+// Check the arguments and return type of the generateStaticParams function
+if (&#x27;generateStaticParams&#x27; in entry) {
+  checkFields&lt;Diff&lt;{ params: PageParams }, FirstArg&lt;MaybeField&lt;TEntry, &#x27;generateStaticParams&#x27;&gt;&gt;, &#x27;generateStaticParams&#x27;&gt;&gt;()
+  checkFields&lt;Diff&lt;{ __tag__: &#x27;generateStaticParams&#x27;, __return_type__: any[] | Promise&lt;any[]&gt; }, { __tag__: &#x27;generateStaticParams&#x27;, __return_type__: ReturnType&lt;MaybeField&lt;TEntry, &#x27;generateStaticParams&#x27;&gt;&gt; }&gt;&gt;()
+}
+
+type PageParams = any
+export interface PageProps {
+  params?: any
+  searchParams?: any
+}
+export interface LayoutProps {
+  children?: React.ReactNode
+
+  params?: any
+}
+
+// =============
+// Utility types
+type RevalidateRange&lt;T&gt; = T extends { revalidate: any } ? NonNegative&lt;T[&#x27;revalidate&#x27;]&gt; : never
+
+// If T is unknown or any, it will be an empty {} type. Otherwise, it will be the same as Omit&lt;T, keyof Base&gt;.
+type OmitWithTag&lt;T, K extends keyof any, _M&gt; = Omit&lt;T, K&gt;
+type Diff&lt;Base, T extends Base, Message extends string = &#x27;&#x27;&gt; = 0 extends (1 &amp; T) ? {} : OmitWithTag&lt;T, keyof Base, Message&gt;
+
+type FirstArg&lt;T extends Function&gt; = T extends (...args: [infer T, any]) =&gt; any ? unknown extends T ? any : T : never
+type SecondArg&lt;T extends Function&gt; = T extends (...args: [any, infer T]) =&gt; any ? unknown extends T ? any : T : never
+type MaybeField&lt;T, K extends string&gt; = T extends { [k in K]: infer G } ? G extends Function ? G : never : never
+
+
+
+function checkFields&lt;_ extends { [k in keyof any]: never }&gt;() {}
+
+// https://github.com/sindresorhus/type-fest
+type Numeric = number | bigint
+type Zero = 0 | 0n
+type Negative&lt;T extends Numeric&gt; = T extends Zero ? never : `${T}` extends `-${string}` ? T : never
+type NonNegative&lt;T extends Numeric&gt; = T extends Zero ? T : Negative&lt;T&gt; extends never ? T : &#x27;__invalid_negative_number__&#x27;
+</textarea><pre id="annotations" style="display:none">[{&quot;file&quot;:&quot;.next/types/app/store/[[...categories]]/page.ts&quot;,&quot;line&quot;:19,&quot;character&quot;:2,&quot;text&quot;:&quot;metadata&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;.next/types/app/store/[[...categories]]/page.ts&quot;,&quot;line&quot;:21,&quot;character&quot;:2,&quot;text&quot;:&quot;viewport&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;.next/types/app/store/[[...categories]]/page.ts&quot;,&quot;line&quot;:43,&quot;character&quot;:21,&quot;text&quot;:&quot;params&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;.next/types/app/store/[[...categories]]/page.ts&quot;,&quot;line&quot;:43,&quot;character&quot;:29,&quot;text&quot;:&quot;PageParams&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;.next/types/app/store/[[...categories]]/page.ts&quot;,&quot;line&quot;:47,&quot;character&quot;:5,&quot;text&quot;:&quot;PageParams&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;.next/types/app/store/[[...categories]]/page.ts&quot;,&quot;line&quot;:49,&quot;character&quot;:2,&quot;text&quot;:&quot;params&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;.next/types/app/store/[[...categories]]/page.ts&quot;,&quot;line&quot;:50,&quot;character&quot;:2,&quot;text&quot;:&quot;searchParams&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;.next/types/app/store/[[...categories]]/page.ts&quot;,&quot;line&quot;:55,&quot;character&quot;:2,&quot;text&quot;:&quot;params&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;.next/types/app/store/[[...categories]]/page.ts&quot;,&quot;line&quot;:60,&quot;character&quot;:38,&quot;text&quot;:&quot;revalidate&quot;,&quot;kind&quot;:1}]</pre></div>
+    <p class="footer-text">TypeScript Coverage Report generated by <a href="https://github.com/plantain-00/type-coverage">type-coverage</a> and <a href="https://github.com/alexcanessa/typescript-coverage-report">typescript-coverage-report</a> at Thu, 04 Jan 2024 16:56:56 GMT</p>
+    </body>
+  </html>
+  

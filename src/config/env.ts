@@ -1,0 +1,8 @@
+export const {
+  SHOPIFY_HOSTNAME = "",
+  SHOPIFY_ACCESS_TOKEN = "",
+  CACHE_TOKEN,
+  SHOPIFY_GRAPHQL_ENDPOINT = "",
+  SHOPIFY_STOREFRONT_TOKEN = "",
+  OPEN_AI_KEY = "",
+} = process.env
