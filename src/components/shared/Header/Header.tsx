@@ -1,8 +1,9 @@
 import dynamic from "next/dynamic"
 import Link from "next/link"
 import { validateAccessToken } from "app/utils/auth/validateAccessToken"
-import styles from "./Header.module.sass"
 import { Loader } from "../Loader"
+import styles from "./Header.module.sass"
+import { NavItem } from "./NavItem"
 
 const NoSSRShoppingCart = dynamic(() => import("../ShoppingCart"), {
   ssr: false,
@@ -16,24 +17,26 @@ export const Header = async () => {
     <header className={styles.Header}>
       <nav>
         <ul className={styles.Header__list}>
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/store">Store</Link>
-          </li>
+          <NavItem href="/" label="Home" paths={["/"]} />
+          <NavItem
+            href="/store"
+            label="Store"
+            paths={["/store", "/product", "/chat"]}
+          />
         </ul>
       </nav>
-      <div className={styles.Header__user}>
+      <nav className={styles.Header__user}>
         {customer?.firstName ? (
-          <Link href="/my-account">
-            <p>Hello, {customer.firstName}!</p>
-          </Link>
+          <NavItem
+            href="/my-account"
+            label={`Hello, ${customer.firstName}!`}
+            paths={["/my-account"]}
+          />
         ) : (
-          <Link href="/login">Login</Link>
+          <NavItem href="/login" label="Login" paths={["/login"]} />
         )}
         <NoSSRShoppingCart />
-      </div>
+      </nav>
     </header>
   )
 }
